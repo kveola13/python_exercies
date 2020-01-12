@@ -15,8 +15,23 @@ def exercise_1():
         print(response)
 
 
+def exercise_2():
+    return "hello"
+
+
+def exercise_3():
+    pass
+
+
+def exercise_4():
+    pass
+
+
 def main():
     exercise_1()
+    exercise_2()
+    exercise_3()
+    exercise_4()
 
 
 if __name__ == '__main__':

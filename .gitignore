@@ -132,3 +132,6 @@ dmypy.json
 
 .gitignore
 .idea/vcs.xml
+/venv/
+/.idea/
+/exercises.iml

@@ -135,3 +135,5 @@ dmypy.json
 /venv/
 /.idea/
 /exercises.iml
+.idea*
+*.iml

@@ -22,8 +22,8 @@ def determine_winner(player_1, player_2):
         print("player2 wins!")
     elif player_1 == 4 or player_2 == 4:
         return 4
-    else:
-        print("TIE!")
+    elif player_1 == player_2:
+        print("TIE!\n")
 
 
 def rock_paper_scissors():

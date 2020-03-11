@@ -1,9 +1,10 @@
 import random
+import string
 
 
 def password_generator(length_of_password):
-    num_list = list(range(0, length_of_password))
-    return random.sample(num_list, length_of_password)
+    return ''.join(
+        [random.choice(string.ascii_letters + string.digits + string.punctuation) for s in range(length_of_password)])
 
 
 def main():

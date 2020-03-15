@@ -4,11 +4,11 @@ def tic_tac_toe(row, column):
 
 
 def check_game_is_won(game_board):
-    for num in range(0, 3):
+    for num in range(0, len(game_board)):
         row = {game_board[num][0], game_board[num][1], game_board[num][2]}
         if len(row) == 1 and game_board[num][0] != 0:
             return game_board[num][0]
-    for num in range(0, 3):
+    for num in range(0, len(game_board)):
         column = [game_board[0][num], game_board[1][num], game_board[2][num]]
         if len(column) == 1 and game_board[0][num] != 0:
             return game_board[0][num]

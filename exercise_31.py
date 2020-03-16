@@ -17,7 +17,11 @@ def hang_man():
     for char in random_word:
         char_list.append(char)
     while len(char_list) > 0 and guess_count > 0:
-        print(guess_list)
+        if len(guess_list) > 0:
+            for el in guess_list:
+                print(el + ' ', end="")
+                sys.stdout.flush()
+            print()
         print("Guesses left: " + str(guess_count))
         for char in random_word:
             if char in guess_list:

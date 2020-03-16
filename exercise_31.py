@@ -17,6 +17,7 @@ def hang_man():
     for char in random_word:
         char_list.append(char)
     while len(char_list) > 0 and guess_count > 0:
+        print(guess_list)
         print("Guesses left: " + str(guess_count))
         for char in random_word:
             if char in guess_list:
@@ -32,11 +33,11 @@ def hang_man():
         while guess_letter in char_list and guess_letter not in guess_list:
             char_list.remove(guess_letter)
             guess_list.append(guess_letter)
-        print(guess_list)
     if len(char_list) == 0:
         print('Congratulations! it took you ' + str(6 - guess_count) + ' to solve this')
     else:
         print('Sorry, you couldn\'t do it in time')
+        print('The word was: ' + random_word)
     play_again = input('Play again? Y/N\n')
     if play_again.upper() == 'Y' or play_again.upper() == 'YES':
         hang_man()

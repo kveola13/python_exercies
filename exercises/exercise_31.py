@@ -1,6 +1,6 @@
 import sys
 
-from exercise_30 import find_random_word
+from exercises.exercise_30 import find_random_word
 
 
 def remove_values_from_list(value_list, val):
